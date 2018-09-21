@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 # -*- coding: utf-8 -*-
-=======
->>>>>>> cfc92a4db3c4e5e7d7cb8acf3d45222ceb5884a9
 import sys, os, json, requests, threading
 from urlparse import urljoin
 from pyinotify import WatchManager, Notifier, EventsCodes, ProcessEvent

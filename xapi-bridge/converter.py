@@ -415,7 +415,3 @@ def to_xapi(evt):
 
     else:
         return ()
-<<<<<<< HEAD
-
-=======
->>>>>>> cfc92a4db3c4e5e7d7cb8acf3d45222ceb5884a9
