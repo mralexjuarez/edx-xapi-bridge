@@ -1,9 +1,6 @@
 import json, re, xml.etree.ElementTree as ET
-<<<<<<< HEAD
 
 
-=======
->>>>>>> cfc92a4db3c4e5e7d7cb8acf3d45222ceb5884a9
 def merge(d1,d2):
 
     if isinstance(d1,dict) and isinstance(d2,dict):
@@ -39,27 +36,15 @@ def to_xapi(evt):
             'platform': 'open.edx.org'
         }
     }
-<<<<<<< HEAD
 
     if (evt['event_type'] == 'seq_goto' or evt['event_type'] == 'seq_next') and evt['event_source'] == 'browser':
-=======
-	## If user selects a tab insated of clicking next
-    if evt['event_type'] == 'seq_goto' and evt['event_source'] == 'browser':
->>>>>>> cfc92a4db3c4e5e7d7cb8acf3d45222ceb5884a9
-
         event = json.loads(evt['event']);
 
         stmt = merge(statement, {
             'verb': {
-<<<<<<< HEAD
-                'id': 'http://adlnet.gov/expapi/verbs/interacted',
-                'display': {
-                    'en-US': 'Interacted'
-=======
                 'id': 'http://adlnet.gov/expapi/verbs/progressed',
                 'display': {
                     'en-US': 'Progressed'
->>>>>>> cfc92a4db3c4e5e7d7cb8acf3d45222ceb5884a9
                 }
             },
             'object': {
